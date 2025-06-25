@@ -1,0 +1,1 @@
+This is a mod for capuchin that removes the barrier keeping you from leaving the map in modded lobbies. It requires Caputilla.
