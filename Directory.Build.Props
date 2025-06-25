@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<GamePath>L:\SteamLibrary\steamapps\common\Capuchin</GamePath>
 		<GameAssemblyPath>$(GamePath)\MelonLoader\Il2CppAssemblies</GameAssemblyPath>
-		<BepInExAssemblyPath>$(GamePath)\MelonLoader\net6</BepInExAssemblyPath>
+		<MelonLoaderAssemblyPath>$(GamePath)\MelonLoader\net6</MelonLoaderAssemblyPath>
 		<ModsPath>$(GamePath)\Mods</ModsPath>
 	</PropertyGroup>
 </Project>
