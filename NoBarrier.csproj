@@ -14,100 +14,73 @@
 
 	<ItemGroup>
 		<Reference Include="0Harmony">
-		  <HintPath>$(BepInExAssemblyPath)\0Harmony.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="MelonLoader">
+			<HintPath>$(MelonLoaderAssemblyPath)\MelonLoader.dll</HintPath>
 		</Reference>
 		<Reference Include="AsmResolver">
-		  <HintPath>$(BepInExAssemblyPath)\AsmResolver.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\AsmResolver.dll</HintPath>
 		</Reference>
 		<Reference Include="AsmResolver.DotNet">
-		  <HintPath>$(BepInExAssemblyPath)\AsmResolver.DotNet.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\AsmResolver.DotNet.dll</HintPath>
 		</Reference>
 		<Reference Include="AsmResolver.PE">
-		  <HintPath>$(BepInExAssemblyPath)\AsmResolver.PE.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\AsmResolver.PE.dll</HintPath>
 		</Reference>
 		<Reference Include="AsmResolver.PE.File">
-		  <HintPath>$(BepInExAssemblyPath)\AsmResolver.PE.File.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\AsmResolver.PE.File.dll</HintPath>
 		</Reference>
 		<Reference Include="Assembly-CSharp">
 		  <HintPath>$(GameAssemblyPath)\Assembly-CSharp.dll</HintPath>
 		</Reference>
-		<Reference Include="AssetRipper.CIL">
-		  <HintPath>$(BepInExAssemblyPath)\AssetRipper.CIL.dll</HintPath>
-		</Reference>
 		<Reference Include="AssetRipper.Primitives">
-		  <HintPath>$(BepInExAssemblyPath)\AssetRipper.Primitives.dll</HintPath>
+			<HintPath>$(MelonLoaderAssemblyPath)\AssetRipper.Primitives.dll</HintPath>
 		</Reference>
-		<Reference Include="BepInEx">
-		  <HintPath>$(BepInExAssemblyPath)\BepInEx.Core.dll</HintPath>
-		</Reference>
-		<Reference Include="BepInEx.Preloader.Core">
-		  <HintPath>$(BepInExAssemblyPath)\BepInEx.Preloader.Core.dll</HintPath>
-		</Reference>
-		<Reference Include="BepInEx.Unity.Common">
-		  <HintPath>$(BepInExAssemblyPath)\BepInEx.Unity.Common.dll</HintPath>
-		</Reference>
-		<Reference Include="BepInEx.Unity.IL2CPP">
-		  <HintPath>$(BepInExAssemblyPath)\BepInEx.Unity.IL2CPP.dll</HintPath>
+		<Reference Include="AssetsTools.NET">
+		  <HintPath>$(MelonLoaderAssemblyPath)\AssetsTools.NET.dll</HintPath>
 		</Reference>
 		<Reference Include="Caputilla">
-		  <HintPath>$(PluginsPath)\Caputilla.dll</HintPath>
+		  <HintPath>$(ModsPath)\Caputilla.dll</HintPath>
 		</Reference>
 		<Reference Include="Cinemachine">
-		  <HintPath>$(GameAssemblyPath)\Cinemachine.dll</HintPath>
-		</Reference>
-		<Reference Include="Cpp2IL.Core">
-		  <HintPath>$(BepInExAssemblyPath)\Cpp2IL.Core.dll</HintPath>
-		</Reference>
-		<Reference Include="Disarm">
-		  <HintPath>$(BepInExAssemblyPath)\Disarm.dll</HintPath>
-		</Reference>
-		<Reference Include="Gee.External.Capstone">
-		  <HintPath>$(BepInExAssemblyPath)\Gee.External.Capstone.dll</HintPath>
+		  <HintPath>$(GameAssemblyPath)\Il2CppCinemachine.dll</HintPath>
 		</Reference>
 		<Reference Include="Iced">
-		  <HintPath>$(BepInExAssemblyPath)\Iced.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\Iced.dll</HintPath>
 		</Reference>
 		<Reference Include="Il2CppInterop.Common">
-		  <HintPath>$(BepInExAssemblyPath)\Il2CppInterop.Common.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\Il2CppInterop.Common.dll</HintPath>
 		</Reference>
 		<Reference Include="Il2CppInterop.Generator">
-		  <HintPath>$(BepInExAssemblyPath)\Il2CppInterop.Generator.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\Il2CppInterop.Generator.dll</HintPath>
 		</Reference>
 		<Reference Include="Il2CppInterop.HarmonySupport">
-		  <HintPath>$(BepInExAssemblyPath)\Il2CppInterop.HarmonySupport.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\Il2CppInterop.HarmonySupport.dll</HintPath>
 		</Reference>
 		<Reference Include="Il2CppInterop.Runtime">
-		  <HintPath>$(BepInExAssemblyPath)\Il2CppInterop.Runtime.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\Il2CppInterop.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="Il2Cppmscorlib">
 		  <HintPath>$(GameAssemblyPath)\Il2Cppmscorlib.dll</HintPath>
 		</Reference>
-		<Reference Include="LibCpp2IL">
-		  <HintPath>$(BepInExAssemblyPath)\LibCpp2IL.dll</HintPath>
-		</Reference>
 		<Reference Include="Mono.Cecil">
-		  <HintPath>$(BepInExAssemblyPath)\Mono.Cecil.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\Mono.Cecil.dll</HintPath>
 		</Reference>
 		<Reference Include="Mono.Cecil.Mdb">
-		  <HintPath>$(BepInExAssemblyPath)\Mono.Cecil.Mdb.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\Mono.Cecil.Mdb.dll</HintPath>
 		</Reference>
 		<Reference Include="Mono.Cecil.Pdb">
-		  <HintPath>$(BepInExAssemblyPath)\Mono.Cecil.Pdb.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\Mono.Cecil.Pdb.dll</HintPath>
 		</Reference>
 		<Reference Include="Mono.Cecil.Rocks">
-		  <HintPath>$(BepInExAssemblyPath)\Mono.Cecil.Rocks.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\Mono.Cecil.Rocks.dll</HintPath>
 		</Reference>
 		<Reference Include="MonoMod.RuntimeDetour">
-		  <HintPath>$(BepInExAssemblyPath)\MonoMod.RuntimeDetour.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\MonoMod.RuntimeDetour.dll</HintPath>
 		</Reference>
 		<Reference Include="MonoMod.Utils">
-		  <HintPath>$(BepInExAssemblyPath)\MonoMod.Utils.dll</HintPath>
-		</Reference>
-		<Reference Include="SemanticVersioning">
-		  <HintPath>$(BepInExAssemblyPath)\SemanticVersioning.dll</HintPath>
-		</Reference>
-		<Reference Include="StableNameDotNet">
-		  <HintPath>$(BepInExAssemblyPath)\StableNameDotNet.dll</HintPath>
+		  <HintPath>$(MelonLoaderAssemblyPath)\MonoMod.Utils.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.InputSystem">
 		  <HintPath>$(GameAssemblyPath)\Unity.InputSystem.dll</HintPath>
@@ -135,12 +108,6 @@
 		</Reference>
 		<Reference Include="UnityEngine.ClothModule">
 		  <HintPath>$(GameAssemblyPath)\UnityEngine.ClothModule.dll</HintPath>
-		</Reference>
-		<Reference Include="UnityEngine.ClusterInputModule">
-		  <HintPath>$(GameAssemblyPath)\UnityEngine.ClusterInputModule.dll</HintPath>
-		</Reference>
-		<Reference Include="UnityEngine.ClusterRendererModule">
-		  <HintPath>$(GameAssemblyPath)\UnityEngine.ClusterRendererModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.CoreModule">
 			<HintPath>$(GameAssemblyPath)\UnityEngine.CoreModule.dll</HintPath>
@@ -301,9 +268,6 @@
 		<Reference Include="UnityEngine.VideoModule">
 		  <HintPath>$(GameAssemblyPath)\UnityEngine.VideoModule.dll</HintPath>
 		</Reference>
-		<Reference Include="UnityEngine.VirtualTexturingModule">
-		  <HintPath>$(GameAssemblyPath)\UnityEngine.VirtualTexturingModule.dll</HintPath>
-		</Reference>
 		<Reference Include="UnityEngine.VRModule">
 		  <HintPath>$(GameAssemblyPath)\UnityEngine.VRModule.dll</HintPath>
 		</Reference>
@@ -312,9 +276,6 @@
 		</Reference>
 		<Reference Include="UnityEngine.XRModule">
 		  <HintPath>$(GameAssemblyPath)\UnityEngine.XRModule.dll</HintPath>
-		</Reference>
-		<Reference Include="WasmDisassembler">
-		  <HintPath>$(BepInExAssemblyPath)\WasmDisassembler.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 </Project>

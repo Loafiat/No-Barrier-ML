@@ -1,42 +1,26 @@
-﻿using BepInEx;
-using BepInEx.Unity.IL2CPP;
-using HarmonyLib;
-using UnityEngine;
+﻿using CapuchinTemplate;
 using Caputilla;
+using MelonLoader;
+using UnityEngine;
+
+[assembly: MelonInfo(typeof(Plugin), CapuchinTemplate.ModInfo.Name, CapuchinTemplate.ModInfo.Version, CapuchinTemplate.ModInfo.Author)]
 
 namespace CapuchinTemplate
 {
-    [BepInPlugin(ModInfo.GUID, ModInfo.Name, ModInfo.Version)]
-    public class Init : BasePlugin
+    public class Plugin : MelonMod
     {
-        // I wouldn't recommend modifying this Init class as it can be hard to understand for new modders.
-        // If you're experienced then probably ignore these comments as they're mostly here to guide new modders.
-        public static Init instance;
-        public Harmony harmonyInstance;
+        public static Plugin instance;
 
-        public override void Load()
+        public override void OnInitializeMelon()
         {
-            AddComponent<Plugin>();
-        }
-
-        public override bool Unload()
-        {
-            return true;
-        }
-    }
-
-    public class Plugin : MonoBehaviour
-    {
-
-        void Start()
-        {
+            instance = this;
             Debug.Log($"{ModInfo.Name} has loaded!");
 
             // Subscription to Caputilla events
             CaputillaManager.Instance.OnModdedJoin += OnModdedJoin;
             CaputillaManager.Instance.OnModdedLeave += OnModdedLeave;
         }
-
+        
         void OnModdedJoin()
         {
             GameObject.Find("MapBarrier").SetActive(false);
